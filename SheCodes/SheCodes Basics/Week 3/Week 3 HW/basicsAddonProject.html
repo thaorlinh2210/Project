@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prison Break</title>
+    <style>
+      body {
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 35px;
+        margin: 10px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      img {
+        max-width: 100%;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: white;
+        border: 1px solid beige;
+        font-size: 24px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: beige;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+      }
+      .theme-button:hover {
+        color: black;
+        background-color: white;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        height: 90%;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(1.1);
+      }
+      .big-pic {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .big-pic:hover {
+        filter: contrast(50%);
+        transform: scale(1.1);
+      }
+      .dark {
+        background: linear-gradient(
+          109.6deg,
+          rgb(36, 45, 57) 11.2%,
+          rgb(16, 37, 60) 51.2%,
+          rgb(0, 0, 0) 98.6%
+        );
+        color: white;
+      }
+      .dark .container {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      .dark a {
+        color: palevioletred;
+      }
+      .dark button {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>Prison Break</h1>
+      <h2>The greatest show of all time</h2>
+
+      <a href="https://www.disneyplus.com/series/prison-break/7O2SFMVATNe5">
+        <img
+          class="big-pic"
+          src="https://cinemaoceania.files.wordpress.com/2022/02/evvaxhsu0aeakkv.jpeg"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F01%2Fprison-break.jpg&q=60"
+        />
+        <img
+          src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/21/1495549368-pb-r-108-sc43-45-0009-hires1.jpg?resize=480:*"
+        />
+        <img
+          src="https://cdn.images.express.co.uk/img/dynamic/20/590x/Prison-Break-season-5-UK-release-date-when-start-790234.jpg"
+        />
+        <img
+          src="https://wonderoes.files.wordpress.com/2017/05/prison-break-5x06-michael-scofield.png?w=672&h=372&crop=1"
+        />
+      </div>
+      <p>
+        Prison Break is an American serial drama television series created by
+        Paul Scheuring for Fox. The series revolves around two brothers, Lincoln
+        Burrows (Dominic Purcell) and Michael Scofield (Wentworth Miller);
+        Burrows has been sentenced to death for a crime he did not commit, while
+        Scofield devises an elaborate plan to help his brother escape prison and
+        clear his name. Along with creator Paul Scheuring, the series is
+        executive-produced by Matt Olmstead, Kevin Hooks, Marty Adelstein, Dawn
+        Parouse, Neal H. Moritz, and Brett Ratner who directed the pilot
+        episode. The series' theme music, composed by Ramin Djawadi, was
+        nominated for a Primetime Emmy Award in 2006.[1] Prison Break is a joint
+        production between Original Film, Adelstein/Parouse Productions (seasons
+        1–4), Dawn Olmstead Productions (season 5), Adelstein Productions
+        (season 5), One Light Road Productions (season 5) and 20th Century Fox
+        Television, and is syndicated by 20th Television.
+      </p>
+      <a href="https://www.disneyplus.com/series/prison-break/7O2SFMVATNe5">
+        🎟️ Watch Prison Break
+      </a>
+    </div>
+
+    <button>Learn more about Prison Break</button>
+  </body>
+  <footer>
+    Coded with 💖 by <a href="https://www.shecodes.io/">Thao Linh Nguyen</a>
+  </footer>
+  <script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+      body.classList.toggle("dark");
+    }
+    let click = document.querySelector(".theme-button");
+    click.addEventListener("click", changeTheme);
+  </script>
+</html>

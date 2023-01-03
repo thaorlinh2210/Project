@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: radial-gradient(
+          621px at 25.3% 13.8%,
+          rgb(255, 255, 255) 0%,
+          rgb(234, 236, 255) 90%
+        );
+      }
+      * {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        transition: all 200ms ease;
+      }
+      h1:hover {
+        color: #2c8ad6;
+      }
+      h2 {
+        text-align: center;
+        font-size: medium;
+      }
+      ul {
+        list-style: none;
+      }
+      span {
+        color: #2c8ad6;
+        font-weight: 600;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: #fff;
+        color: #2c8ad6;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 15px 15px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 1px 1px 10px lightgray;
+        margin-top: 10px;
+      }
+      button:hover {
+        color: #fff;
+        background: #2c8ad6;
+        border: 1px solid #2c8ad6;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 20px;
+      }
+      div {
+        text-align: center;
+        padding-top: 15px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 100;
+        margin: 0cm;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Al Janoub Stadium</h1>
+    <h2>Capacity: 44325</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/684/original/Screenshot_2022-11-30_at_2.25.17_am.png?1669735565"
+      alt="Al Janoub Stadium"
+    />
+
+    <br />
+    <p>
+      The design is inspired by the sails of traditional
+      <span>dhow boats</span>, in tribute to Al Wakrah's seafaring past. An
+      innovative cooling system and retractable roof mean the stadium will be
+      used all year round. The stadium was designed by
+      <strong>AECOM and Zaha Hadid Architects</strong>.
+    </p>
+    <br />
+    <p>
+      The stadium is set to host six group-stage matches along with one
+      Round-of-16 match.
+    </p>
+    <ul>
+      <li>Group D: France v Australia</li>
+      <li>Group G: Switzerland v Cameroon</li>
+      <li>Group D: Tunisia v Australia</li>
+      <li>Group G: Cameroon v Serbia</li>
+      <li>Group D: Australia v Denmark</li>
+      <li>Group H: Ghana v Uruguay</li>
+      <li>Round of 16: 1E v 2F</li>
+    </ul>
+    <p>
+      Learn more about Al Janoub Stadium and FIFA World Cup at
+      <a
+        href="https://www.fifa.com/fifaplus/en/articles/al-janoub-stadium-en"
+        target="_blank"
+        >FIFA</a
+      >
+    </p>
+    <button>⚽️</button>
+  </body>
+  <hr />
+  <div>
+    <p>
+      Image source:
+      <a
+        href="https://dribbble.com/shots/20010015-Al-Janoub-Stadium-in-Qatar-2022"
+        target="_blank"
+        ><em>Musemind branding</em></a
+      >
+    </p>
+  </div>
+  <script>
+    function check() {
+      let ask = prompt("Are you a soccer fan?");
+      ask = ask.toLowerCase().trim();
+      return ask === "yes";
+    }
+    function soccerFan() {
+      if (check()) {
+        alert("That's great!");
+      } else {
+        alert("I'm not a soccer enthusiast but I love beautiful stadiums!");
+      }
+    }
+    let click = document.querySelector("button");
+    click.addEventListener("click", soccerFan);
+  </script>
+</html>

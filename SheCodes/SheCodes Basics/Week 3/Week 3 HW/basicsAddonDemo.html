@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salsa - my hobby 💃</title>
+    <style>
+      body {
+        background-color: plum;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid plum;
+        background: white;
+        font-size: 24px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: plum;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+      }
+      .theme-button:hover {
+        color: black;
+        background-color: white;
+      }
+      .salsa-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .salsa-intro-picture:hover {
+        filter: contrast(50%);
+
+        transform: scale(1.1);
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+      .grid img:hover {
+        transform: scale(1.2);
+      }
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark .container {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>Salsa</h1>
+      <h2>My favourite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Salsa_(dance)">
+        <img
+          class="salsa-intro-picture"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/122/original/salsa-header.jpg?1663066724"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/123/original/salsa-grid-1.jpg?1663066729"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/124/original/salsa-grid-2.jpg?1663066734"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/125/original/salsa-grid-3.jpg?1663066738"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/126/original/salsa-grid-4.jpg?1663066742"
+        />
+      </div>
+      <p>
+        Salsa is a Latin dance, associated with the music genre of the same
+        name, which was first popularised in the United States in the 1960s in
+        New York City. Salsa is a amalgamation of Cuban dances, such as mambo,
+        pachanga and rumbe, as well as American dances such as swing and tap.
+      </p>
+      <a href="https://splendid-chimera-0e7d21.netlify.app/project/styling/"
+        >Read on Wikipedia</a
+      >
+    </div>
+
+    <button>Learn Salsa</button>
+  </body>
+  <footer>
+    Coded with 💖 by <a href="https://www.shecodes.io/">Matt Delac</a>
+  </footer>
+  <script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+      //   if (body.classList.contains("dark")) {
+      //     body.classList.remove("dark");
+      //   } else {
+      //     body.classList.add("dark");
+      //   }
+      body.classList.toggle("dark");
+    }
+    let themeButton = document.querySelector(".theme-button");
+    themeButton.addEventListener("click", changeTheme);
+  </script>
+</html>
